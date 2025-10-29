@@ -1,384 +1,109 @@
 <!DOCTYPE html>
 <html lang="fi">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hieronta Maria Virtanen – Klassinen hieronta ja urheiluhieronta Helsinki</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <link rel="stylesheet" href="main.css">
+    <title>Mali Thai Massage</title>
+  </head>
+  <body>
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #fff;
-        }
+    <div class="da-big-daddy">
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+      <img>
+      <div>
+        <h2>Mali Thai Massage</h2>
+      </div>
+      <div> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> </div>
+      <div> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> </div>
+      <div> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> </div>
+      <div> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> </div>
+      <div> 
 
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding: 40px 0;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            border-radius: 10px;
-        }
+        <a href="mailto:">Book time</a> 
 
-        h1 {
-            font-size: 2.5em;
-            color: #2c3e50;
-            margin-bottom: 10px;
-            font-weight: 300;
-        }
+      </div>
 
-        .subtitle {
-            font-size: 1.2em;
-            color: #6c757d;
-            margin-bottom: 30px;
-        }
-
-        .logo {
-            width: 120px;
-            height: 120px;
-            margin: 20px auto;
-            background: #3498db;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3em;
-            color: white;
-            font-weight: bold;
-        }
-
-        .section {
-            margin: 40px 0;
-            padding: 30px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            border-left: 4px solid #3498db;
-        }
-
-        .section h2 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-            font-size: 1.8em;
-            font-weight: 400;
-        }
-
-        .section p {
-            margin-bottom: 15px;
-            text-align: justify;
-            line-height: 1.7;
-        }
-
-        .services {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin: 40px 0;
-        }
-
-        .service-card {
-            background: white;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            border-top: 3px solid #3498db;
-        }
-
-        .service-card h3 {
-            color: #2c3e50;
-            margin-bottom: 15px;
-            font-size: 1.4em;
-        }
-
-        .pricing {
-            background: #2c3e50;
-            color: white;
-            padding: 30px;
-            border-radius: 8px;
-            margin: 40px 0;
-        }
-
-        .pricing h2 {
-            color: white;
-            text-align: center;
-            margin-bottom: 25px;
-        }
-
-        .price-list {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-
-        .price-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.2);
-        }
-
-        .when-to-visit {
-            background: linear-gradient(135deg, #e8f5e8 0%, #f0f8f0 100%);
-            padding: 30px;
-            border-radius: 8px;
-            margin: 40px 0;
-        }
-
-        .when-to-visit h2 {
-            color: #27ae60;
-            margin-bottom: 20px;
-        }
-
-        .when-to-visit ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .when-to-visit li {
-            padding: 8px 0;
-            padding-left: 25px;
-            position: relative;
-        }
-
-        .when-to-visit li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #27ae60;
-            font-weight: bold;
-        }
-
-        .contact {
-            background: #34495e;
-            color: white;
-            padding: 30px;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .contact h2 {
-            color: white;
-            margin-bottom: 20px;
-        }
-
-        .contact-info {
-            margin: 20px 0;
-        }
-
-        .cta-button {
-            background: #e74c3c;
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.1em;
-            cursor: pointer;
-            margin: 20px 10px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .cta-button:hover {
-            background: #c0392b;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
-        }
-
-        .workspace-image {
-            width: 100%;
-            height: 300px;
-            background: linear-gradient(45deg, #bdc3c7, #2c3e50);
-            border-radius: 8px;
-            margin: 20px 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.2em;
-        }
-
-        .payment-info {
-            background: #ecf0f1;
-            padding: 20px;
-            border-radius: 5px;
-            margin: 20px 0;
-            font-size: 0.9em;
-            text-align: center;
-        }
-
-        @media (max-width: 768px) {
-            .services {
-                grid-template-columns: 1fr;
-            }
-            
-            .price-list {
-                grid-template-columns: 1fr;
-            }
-            
-            h1 {
-                font-size: 2em;
-            }
-            
-            .container {
-                padding: 10px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Hieronta Maria Virtanen</h1>
-            <p class="subtitle">Koulutettu hieroja ja urheiluhieroja (EAT).</p>
-            <div class="logo">MV</div>
-        </header>
-
-        <section class="section">
-            <h2>MINÄ</h2>
-            <p>Aina aktiivisesti joko kuntosalilla, lenkkipolulla tai pallon perässä rennosti, mutta voitontahtoisesti liikkuneena olen ollut kiinnostunut omasta hyvinvoinnistani. Iän karttuessa olen ymmärtänyt lihashuollon tärkeyden ja siksi innostuinkin opiskelemaan itseni hierojaksi. Suoritin urheiluhieronnan erikoisammattitutkinnon (EAT) valmiiksi TYA-oppilaitoksessa kesäkuussa 2023.</p>
-            
-            <p>Helsinkiläinen TYA-oppilaitos antoi erittäin hyvän pohjan tähän ammattiin, mutta jatkuva itsensä kehittäminen ja uuden oppiminen on silti erityisen tärkeää. Tästä johtuen pohdin jatkuvasti omia toimintatapojani, muovaan niitä uuden tutkimustiedon valossa ja opiskelen jatkuvasti uutta taatakseni asiakkailleni mahdollisimman laadukasta palvelua.</p>
-            
-            <p>Toimin itsenäisenä ammatinharjoittajana yhdessä kolmen muun terveydenhuoltoalan ammattilaisen kanssa Helsingin keskustassa, Keskus Wellness -hyvinvointikeskuksen tiloissa osoitteessa Mannerheimintie 12 A 15 (2. kerros).</p>
-            
-            <div style="text-align: center; margin: 30px 0;">
-                <a href="#yhteystiedot" class="cta-button">OTA YHTEYTTÄ</a>
-            </div>
-        </section>
-
-        <div class="services">
-            <div class="service-card">
-                <h3>Klassinen hieronta</h3>
-                <p>Klassisella hieronnalla rentoutetaan lihaksia, poistetaan lihaskipuja, vilkastutetaan verenkiertoa ja lymfakiertoa sekä vähennetään turvotusta. Klassinen hieronta rauhoittaa myös keskushermostoa. Tämän vuoksi klassinen hieronta sopii hyvin kaikille ikään ja kuntoon katsomatta. Klassista hierontaa käytetään lihaskireyksien helpottamiseen, stressin lievittämiseen sekä esimerkiksi kehon ja mielen rentouttamiseen.</p>
-            </div>
-
-            <div class="service-card">
-                <h3>Urheiluhieronta</h3>
-                <p>Urheiluhieronnassa otetaan huomioon urheilijan harjoittelu sekä kilpailukausi ja sovelletaan hierontaa edellä mainittujen tarpeiden mukaan. Urheiluhieronnalla rentoutetaan lihaksia, edistetään palautumista, autetaan vammoista paranemista ja ennaltaehkäistään uusia vammoja. Urheiluhieronta ei kuitenkaan sovellu ainoastaan urheilijoille, vaan se sopii hyvin myös tavallisille liikkujille.</p>
-            </div>
-        </div>
-
-        <section class="section">
-            <p>Palveluihini kuuluu sekä klassinen hieronta että urheiluhieronta. Teen hierontahoidon yhteydessä myös passiivisia venytyksiä asiakkaan tarpeen mukaan. Lisäksi tarjoan lämpöpakkauksen käyttöä hierontahoidon yhteydessä.</p>
-            
-            <p>Hoitooni kuuluu aina haastattelu, jonka kautta selvitän asiakkaan yksilölliset tarpeet ja toiveet, sekä hänen sen hetkisen terveydentilansa ja siinä tapahtuneet muutokset. Tutkin aina asiakkaan esille tuomat ongelmat löytääkseni perimmäisen syyn esimerkiksi mahdolliselle kivulle. Toimin aina parhaan ammattitaitoni mukaan taatakseni asiakkaalleni kokonaisvaltaisen ja parhaan mahdollisen lopputuloksen.</p>
-        </section>
-
-        <div class="workspace-image">
-            Työtilani on tilava, valoisa ja rauhallinen.
-        </div>
-
-        <section class="pricing">
-            <h2>HINNASTO</h2>
-            <div class="price-list">
-                <div class="price-item">
-                    <span>30 min. hieronta</span>
-                    <span>45€</span>
-                </div>
-                <div class="price-item">
-                    <span>45 min. hieronta</span>
-                    <span>65€</span>
-                </div>
-                <div class="price-item">
-                    <span>60 min. hieronta</span>
-                    <span>80€</span>
-                </div>
-                <div class="price-item">
-                    <span>75 min. hieronta</span>
-                    <span>95€</span>
-                </div>
-                <div class="price-item">
-                    <span>90 min. hieronta</span>
-                    <span>110€</span>
-                </div>
-                <div class="price-item">
-                    <span>120 min. hieronta</span>
-                    <span>140€</span>
-                </div>
-            </div>
-            
-            <div class="payment-info">
-                Peruuttamattomasta ajasta veloitetaan 50% hoidon hinnasta. 
-                Maksuvälineenä käy käteinen, yleisimmät maksukortit ja ePassi
-            </div>
-        </section>
-
-        <section class="when-to-visit">
-            <h2>Milloin hierontaan?</h2>
-            <ul>
-                <li>Mikäli sinulla on päänsärkyä, huimausta tai niska jumissa</li>
-                <li>Mikäli selkä on kipeä</li>
-                <li>Jos sinulla on lihaskipua tai hermosärkyä</li>
-                <li>Jos kärsit tuki- ja liikuntaelinsairaudesta</li>
-                <li>Nivelten liikkeet tuntuvat rajoittuneilta</li>
-                <li>Haluat rentoutua kiireisen arjen keskellä</li>
-            </ul>
-            
-            <p style="margin-top: 20px;">Varaa aikasi netistä tai ota yhteyttä ja kysy lisää, mikäli jokin askarruttaa. En vastaa hoitojen aikana puhelimeen, joten jätä viesti ja soitan takaisin. Teen myös yritys- ja kotikäyntejä, pyydä tarjous!</p>
-        </section>
-
-        <section class="contact" id="yhteystiedot">
-            <h2>YHTEYSTIEDOT</h2>
-            <div class="contact-info">
-                <strong>Hieronta Maria Virtanen</strong><br>
-                Mannerheimintie 12 A 15 (2. kerros)<br>
-                00100 Helsinki<br><br>
-                Puh. 040 123 4567<br>
-                Y-tunnus: 1234567-8
-            </div>
-            
-            <a href="#" class="cta-button" onclick="alert('Ajanvarausjärjestelmä aukeaisi tässä')">VARAA AIKA</a>
-        </section>
     </div>
+    <main>
 
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+      <div class="rel Studio" >
 
-        // Add subtle animation on scroll
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('.section, .service-card');
-            sections.forEach(section => {
-                const rect = section.getBoundingClientRect();
-                if (rect.top < window.innerHeight && rect.bottom > 0) {
-                    section.style.opacity = '1';
-                    section.style.transform = 'translateY(0)';
-                }
-            });
-        });
+        <div class="studio-image">
+          <img>
+          <h2>Studio</h2>
+        </div>
+        <div class="studio-text">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+        </div>
 
-        // Initialize animations
-        document.addEventListener('DOMContentLoaded', () => {
-            const sections = document.querySelectorAll('.section, .service-card');
-            sections.forEach(section => {
-                section.style.opacity = '0';
-                section.style.transform = 'translateY(20px)';
-                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            });
-        });
-    </script>
-</body>
+      </div>
+      <div class="rel Service" >
+
+        <div class="service-image">
+          <img>
+          <h2>Service</h2>
+        </div>
+        <div class="service-text">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+        </div>
+
+      </div>
+      <div class="rel Pricing" >
+
+        <div class="pricing-image">
+          <img>
+          <h2>Pricing</h2>
+        </div>
+        <div class="pricing-text">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+        </div>
+
+      </div>
+      <div class="rel Messages" >
+
+        <div class="massages-image">
+          <img>
+          <h2>Massages</h2>
+        </div>
+        <div class="massage-text">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+        </div>
+
+      </div>
+      <div class="rel Q-A" >
+
+        <div class="qa-image">
+          <img>
+          <h2>G&A</h2>
+        </div>
+        <div class="qa-text">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+        </div>
+
+      </div>
+
+    </main>
+
+  </body>
+  <br>
+  <footer>
+
+    <div> socials </div>
+
+    <div> contacts</div>
+
+  </footer>
 </html>

@@ -1,0 +1,144 @@
+
+:root{
+
+  --margin: 20px;
+  --padding: 20px;
+  --block: inline-block;
+
+}
+
+
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+
+  display: grid;
+  grid-template-areas:
+  "header header header"
+  ". main ."
+  ". service ."
+  ". pricing ."
+  ". massages ."
+  ". qa ."
+  "footer footer footer";
+}
+
+title
+{
+
+  display: none;
+
+}
+
+.rel
+{
+
+  position: relative;
+
+}
+
+/* ----====Hello-World====---- */
+
+.da-big-daddy
+{
+
+  grid-area: header;
+
+}
+
+/* ----========---- */
+
+
+
+/* ----====Studio====---- */
+
+.Studio
+{
+
+  grid-area: main;
+
+}
+
+/* ----========---- */
+
+
+
+/* ----====Service====---- */
+
+.Service
+{
+
+  grid-area: service;
+
+}
+
+/* ----========---- */
+
+
+
+/* ----====Pricing====---- */
+
+.Pricing
+{
+
+  grid-area: pricing;
+
+}
+
+/* ----========---- */
+
+
+
+/* ----====Massage====---- */
+
+.Massages
+{
+
+  grid-area: massages;
+
+}
+
+
+/* ----========---- */
+
+
+
+/* ----====Q-A====---- */
+
+.Q-A
+{
+
+  grid-area: qa;
+
+}
+
+/* ----========---- */
+
+
+
+/* ----====Footer====---- */
+
+footer
+{
+
+  grid-area: footer;
+
+}
+
+/* ----========---- */
+
+
+
+
+
+
+
+
+
+
+
+
