@@ -1,0 +1,508 @@
+
+/*
+
+I am too lazy to write numbers. I can write words and much faster than numbers. It is also much cleaner to me.
+
+I can assure you. This is so much dumber than write the number myself. But who cares this shit is my code :>
+
+*/
+
+:root{
+
+  --margin: 20px;
+  --padding: 20px;
+  --block: inline-block;
+  --maxW: 1920px;
+  --maxH: 1080px;
+  --default-padding: 0;
+  --default-margin: 0;
+
+}
+
+*
+{
+
+  max-width: var(--maxW);
+  max-height: var(--maxH);
+  padding: var(--default-padding);
+  margin: var(--default-margin);
+
+  justify-items: center; 
+
+  width: 100%;
+
+  overflow-x: hidden;
+
+}
+
+body 
+{
+
+  display: grid;
+  grid-template-areas: 
+  "nav"
+  "landing"
+  "studio"
+  "service"
+  "pricing"
+  "massage"
+  "qa"
+  "footer";
+
+}
+
+/* ----====Nav====---- */
+
+nav
+{
+
+  grid-area: nav;
+  height: 100px;
+  width: 100%;
+
+  background-color: lightblue;
+
+}
+
+/* ----========---- */
+
+
+
+/* ----====Hello-World====---- */
+
+.da-big-daddy
+{
+
+  grid-area: landing;
+  max-height: var(--maxH);
+
+}
+
+.meow-da-image 
+{
+
+  width: 80%;
+
+  text-align: center;
+
+  background-color: #ffff;
+
+  border-radius: 17px;
+
+  padding: 20px;
+  margin: 20px;
+
+}
+
+.meow-da-text
+{
+
+  padding: 20px;
+  margin: 20px;
+
+  background-color: #B1BAB6;
+
+  text-align: center;
+
+  border-radius: 17px;
+
+  width: 80%;
+  height: 400px;
+
+}
+
+.meow-da-book
+{
+
+  padding: 20px;
+  margin: 20px;
+
+  background-color: #FFFFEA;
+
+  border-radius: 17px;
+
+  text-align: center;
+
+  width: 80%;
+
+}
+
+.meow-da-book a
+{
+
+  text-decoration: none;
+  color: black;
+
+}
+
+.meow-da-book a:hover
+{
+
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.53);
+
+}
+
+/* ----========---- */
+
+
+
+/* ----====Studio====---- */
+
+/*
+
+Don't you dare say anything about left and right being on the wrong side. I can't even walk straight;
+
+*/
+
+.Studio
+{
+
+  grid-area: studio;
+
+  background-color: #627482;
+  display: grid;
+  text-align: center;
+
+  grid-template-areas: 
+  " right image s-text left ";
+  grid-template-columns: 10% 40% 40% 10%;
+  gap: 0rem;
+
+
+}
+
+.studio-image
+{
+
+  width: 80%;
+  height: 300px;
+
+  text-align: center;
+  grid-area: image;
+
+  background-color: white;
+
+  padding: 20px;
+  margin: 20px;
+
+}
+
+.studio-text
+{
+
+  width: 80%;
+  height: 300px;
+
+  text-align: center;
+  grid-area: s-text;
+
+  background-color: white;
+
+  padding: 20px;
+  margin: 20px;
+
+}
+
+.studio-left
+{
+
+  grid-area: left;
+
+}
+
+.studio-right
+{
+
+  grid-area: right;
+
+}
+
+/* ----========---- */
+
+
+
+/* ----====Service====---- */
+
+.Service
+{
+
+  display: grid;
+  grid-template-areas: 
+  " right s-text image left ";
+  grid-template-columns: 10% 40% 40% 10%;
+  gap: 0rem;
+
+  background-color: lightgrey;
+
+}
+
+.service-image
+{
+
+  width: 80%;
+  height: 300px;
+
+  text-align: center;
+  grid-area: image;
+
+  background-color: white;
+
+  padding: 20px;
+  margin: 20px;
+
+}
+
+.service-text
+{
+
+  width: 80%;
+  height: 300px;
+
+  text-align: center;
+  grid-area: s-text;
+
+  background-color: white;
+
+  padding: 20px;
+  margin: 20px;
+
+}
+
+.service-left
+{
+
+  grid-area: left;
+
+}
+
+.service-right
+{
+
+  grid-area: left;
+
+}
+
+/* ----========---- */
+
+
+
+/* ----====Pricing====---- */
+
+.Pricing
+{
+
+  display: grid;
+  grid-template-areas: 
+  " right image s-text left ";
+  grid-template-columns: 10% 40% 40% 10%;
+  gap: 0rem;
+
+  background-color: lightpink;
+
+}
+
+.pricing-image
+{
+
+  width: 80%;
+  height: 300px;
+
+  text-align: center;
+  grid-area: image;
+
+  background-color: white;
+
+  padding: 20px;
+  margin: 20px;
+
+}
+
+.pricing-text
+{
+
+  width: 80%;
+  height: 300px;
+
+  text-align: center;
+  grid-area: s-text;
+
+  background-color: white;
+
+  padding: 20px;
+  margin: 20px;
+
+}
+
+.pricing-left
+{
+
+  grid-area: left;
+
+}
+
+.pricing-right
+{
+
+  grid-area: left;
+
+}
+
+/* ----========---- */
+
+
+
+/* ----====Massage====---- */
+
+.Massages
+{
+
+  display: grid;
+  grid-template-areas: 
+  " right s-text image left ";
+  grid-template-columns: 10% 40% 40% 10%;
+  gap: 0rem;
+
+  background-color: lightgreen;
+
+}
+
+.massages-image
+{
+
+  width: 80%;
+  height: 300px;
+
+  text-align: center;
+  grid-area: image;
+
+  background-color: white;
+
+  padding: 20px;
+  margin: 20px;
+
+}
+
+.massages-text
+{
+
+  width: 80%;
+  height: 300px;
+
+  text-align: center;
+  grid-area: s-text;
+
+  background-color: white;
+
+  padding: 20px;
+  margin: 20px;
+
+}
+
+.massages-left
+{
+
+  grid-area: left;
+
+}
+
+.massages-right
+{
+
+  grid-area: left;
+
+}
+
+/* ----========---- */
+
+
+
+/* ----====Q-A====---- */
+
+.Q-A
+{
+
+  display: grid;
+  grid-template-areas: 
+  " right image s-text left ";
+  grid-template-columns: 10% 40% 40% 10%;
+  gap: 0rem;
+
+  background-color: lightgrey;
+
+}
+
+.qa-image
+{
+
+  width: 80%;
+  height: 300px;
+
+  text-align: center;
+  grid-area: image;
+
+  background-color: white;
+
+  padding: 20px;
+  margin: 20px;
+
+}
+
+.qa-text
+{
+
+  width: 80%;
+  height: 300px;
+
+  text-align: center;
+  grid-area: s-text;
+
+  background-color: white;
+
+  padding: 20px;
+  margin: 20px;
+
+}
+
+.qa-left
+{
+
+  grid-area: left;
+
+}
+
+.qa-right
+{
+
+  grid-area: left;
+
+}
+
+
+/* ----========---- */
+
+
+
+/* ----====Footer====---- */
+
+footer
+{
+
+  background-color: lightblue;
+  height: 100px;
+
+}
+
+/* ----========---- */
+
+
+
+
+
+
+
+
+
+
+
+
