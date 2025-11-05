@@ -1,52 +1,114 @@
 
+/*
+
+I am too lazy to write numbers. I can write words and much faster than numbers. It is also much cleaner to me.
+
+I can assure you. This is so much dumber than write the number myself. But who cares this shit is my code :>
+
+*/
+
 :root{
 
   --margin: 20px;
   --padding: 20px;
   --block: inline-block;
+  --maxW: 1920px;
+  --maxH: 1080px;
+  --default-padding: 0;
+  --default-margin: 0;
 
 }
 
-
-* 
+*
 {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  max-width: 100%;
+
+  max-width: var(--maxW);
+  max-height: var(--maxH);
+  padding: var(--default-padding);
+  margin: var(--default-margin);
+
+  justify-items: center; 
+
+  width: 100%;
+
   overflow-x: hidden;
 
+}
+
+
+.container
+{
+
   display: grid;
-  grid-template-areas:
-  "header header header"
-  ". main ."
-  ". service ."
-  ". pricing ."
-  ". massages ."
-  ". qa ."
-  "footer footer footer";
-}
-
-title
-{
-
-  display: none;
-
-}
-
-.rel
-{
-
-  position: relative;
 
 }
 
 /* ----====Hello-World====---- */
 
-.da-big-daddy
+.meow-da-image 
 {
 
-  grid-area: header;
+  position: relative;
+
+  width: 80%;
+
+  text-align: center;
+
+  background-color: #ffff;
+
+  border-radius: 17px;
+
+  padding: 20px;
+  margin: 20px;
+
+}
+
+.meow-da-text
+{
+
+  padding: 20px;
+  margin: 20px;
+
+  background-color: #B1BAB6;
+
+  text-align: center;
+
+  border-radius: 17px;
+
+  width: 80%;
+  height: 400px;
+
+}
+
+.meow-da-book
+{
+
+  padding: 20px;
+  margin: 20px;
+
+  background-color: #FFFFEA;
+
+  border-radius: 17px;
+
+  text-align: center;
+
+  width: 80%;
+
+}
+
+.meow-da-book a
+{
+
+  text-decoration: none;
+  color: black;
+
+}
+
+.meow-da-book a:hover
+{
+
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.53);
 
 }
 
@@ -56,10 +118,70 @@ title
 
 /* ----====Studio====---- */
 
+/*
+
+Don't you dare say anything about left and right being on the wrong side. I can't even walk straight;
+
+*/
+
 .Studio
 {
 
-  grid-area: main;
+  background-color: #627482;
+  display: grid;
+  text-align: center;
+
+  grid-template-areas: 
+  " right image s-text left ";
+  grid-template-columns: 10% 40% 40% 10%;
+  gap: 0rem;
+
+
+}
+
+.studio-image
+{
+
+  width: 100%;
+  height: 300px;
+
+  text-align: center;
+  grid-area: image;
+
+  background-color: white;
+
+  padding: 20px;
+  margin: 20px;
+
+}
+
+.studio-text
+{
+
+  width: 100%;
+  height: 300px;
+
+  text-align: center;
+  grid-area: s-text;
+
+  background-color: white;
+
+  padding: 20px;
+  margin: 20px;
+
+}
+
+.studio-left
+{
+
+  grid-area: left;
+
+}
+
+.studio-right
+{
+
+  grid-area: right;
 
 }
 
@@ -72,7 +194,6 @@ title
 .Service
 {
 
-  grid-area: service;
 
 }
 
@@ -85,7 +206,6 @@ title
 .Pricing
 {
 
-  grid-area: pricing;
 
 }
 
@@ -98,7 +218,6 @@ title
 .Massages
 {
 
-  grid-area: massages;
 
 }
 
@@ -112,7 +231,6 @@ title
 .Q-A
 {
 
-  grid-area: qa;
 
 }
 
@@ -125,7 +243,7 @@ title
 footer
 {
 
-  grid-area: footer;
+  background-color: lightblue;
 
 }
 
