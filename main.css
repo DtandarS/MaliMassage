@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 /*
 
 I am too lazy to write numbers. I can write words and much faster than numbers. It is also much cleaner to me.
@@ -12,8 +14,8 @@ I can assure you. This is so much dumber than write the number myself. But who c
   --margin: 20px;
   --padding: 20px;
   --block: inline-block;
-  --maxW: 1920px;
-  --maxH: 1080px;
+  --maxW: 100%;
+  --maxH: 100%;
   --default-padding: 0;
   --default-margin: 0;
 
@@ -21,6 +23,9 @@ I can assure you. This is so much dumber than write the number myself. But who c
 
 *
 {
+
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
 
   max-width: var(--maxW);
   max-height: var(--maxH);
@@ -51,6 +56,8 @@ body
 
 }
 
+/* I ended up using normal numbers instead of bunch of words......... */
+
 /* ----====Nav====---- */
 
 nav
@@ -76,62 +83,131 @@ nav
   grid-area: landing;
   max-height: var(--maxH);
 
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-rows 20px ;
+  grid-template-areas: 
+  "right hello daddy-text left"
+  "right book daddy-text left";
+  gap: 0rem;
+
+  background-image: url(" image/image1.JPEG ");
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: 80% 100% ;
+  background-color: #cccccc ;
+
+  height: 1200px;
+
 }
 
-.meow-da-image 
+.big-muscles-right
+{
+  grid-area: left;
+}
+.big-muscles-left
+{
+  grid-area: right;
+}
+
+
+.meow-da-image
 {
 
+  padding: 1%;
+  margin: 1%;
+
+
+  align-content: center;
+
   width: 80%;
+  height: auto;
 
-  text-align: center;
 
-  background-color: #ffff;
+}
 
-  border-radius: 17px;
+.meow-da-landing 
+{
+
+
+  grid-area: hello ;
+
+  background-color: rgba(150, 150, 150, 0.0);
+
+  width: 60%;
 
   padding: 20px;
   margin: 20px;
+
+  color: white;
+
+  text-align: center;
+
+  font-size: 40px;
+
+  display: flex;
+  align-items: center; 
+  justify-content: center;
 
 }
 
 .meow-da-text
 {
 
+  grid-area: daddy-text ;
+
+  color: white;
+
+  height: 700px;
+  width: 60%;
+
   padding: 20px;
   margin: 20px;
 
-  background-color: #B1BAB6;
+  background-color: rgba(150, 150, 150, 0.0);
 
-  text-align: center;
+  font-size: 30px;
 
-  border-radius: 17px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-  width: 80%;
-  height: 400px;
 
 }
 
 .meow-da-book
 {
 
+  grid-area: book ;
+
+  background-color: rgba(150, 150, 150, 0.0);
+
+  align-items: center ;
+
+  width: 100%;
+
   padding: 20px;
   margin: 20px;
 
-  background-color: #FFFFEA;
-
-  border-radius: 17px;
-
   text-align: center;
-
-  width: 80%;
 
 }
 
 .meow-da-book a
 {
 
+  text-align: center;
+
   text-decoration: none;
-  color: black;
+
+  color: white;
+  background-color: lightblue;
+
+  font-size: 40px;
+  
+  border-radius: 20px;
+
+  padding: 20px;
 
 }
 
