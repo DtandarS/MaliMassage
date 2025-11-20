@@ -18,6 +18,8 @@ I can assure you. This is so much dumber than write the number myself. But who c
   --maxH: 100%;
   --default-padding: 0;
   --default-margin: 0;
+  --back-text: rgba(150, 150, 150, 0.4);
+  --back-image: #b1bab6;
 
 }
 
@@ -34,9 +36,11 @@ I can assure you. This is so much dumber than write the number myself. But who c
 
   justify-items: center; 
 
-  width: 100%;
+  width: var(--maxW) ; 
 
   overflow-x: hidden;
+
+  border-radius: 10px ;
 
 }
 
@@ -52,6 +56,7 @@ body
   "pricing"
   "massage"
   "qa"
+  "contact"
   "footer";
 
 }
@@ -64,12 +69,64 @@ nav
 {
 
   grid-area: nav;
-  height: 100px;
+  height: 80px;
   width: 100%;
 
-  background-color: lightblue;
+  background-color: #B1BAB6;
+
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 
+  " logo links "
+  ;
 
 }
+
+nav a 
+{
+
+  color: rgba(50, 45, 50, 1); 
+  text-decoration: none;
+  font-size: 20px;
+
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba( 249, 245, 249, 1);
+  padding: 10px;
+  margin: 10px;
+
+  border-radius: 20px;
+
+}
+
+nav a:hover
+{
+
+  color: rgba(145, 150, 149, 1);
+
+}
+
+.navbar
+{
+
+  grid-area: links;
+
+  display: inline-flex;
+
+}
+
+.nav-logo
+{
+
+  grid-area: logo;
+
+}
+
 
 /* ----========---- */
 
@@ -84,51 +141,34 @@ nav
   max-height: var(--maxH);
 
   display: grid;
-  grid-template-columns: 10% 40% 40% 10%;
-  grid-template-rows 20px ;
+  grid-template-columns: 5% 40% 50% 5%;
+  grid-template-rows: auto ;
   grid-template-areas: 
   "right hello daddy-text left"
   "right book daddy-text left";
   gap: 0rem;
-
-  background-image: url(" image/image1.JPEG ");
-  background-position: center ;
-  background-repeat: no-repeat;
-  background-size: 80% 100% ;
-  background-color: #cccccc ;
-
-  height: 1200px;
+  margin: 20px;
+  padding: 20px;
 
 }
-
-.big-muscles-right
-{
-  grid-area: left;
-}
-.big-muscles-left
-{
-  grid-area: right;
-}
-
 
 .meow-da-image
 {
 
-  padding: 1%;
-  margin: 1%;
+  border-radius: 28px;
 
-
-  align-content: center;
-
-  width: 80%;
+  width: 100%;
   height: auto;
 
+  grid-area: right / right / left / left;
+
+  padding: 0;
+  margin: 0;
 
 }
 
 .meow-da-landing 
 {
-
 
   grid-area: hello ;
 
@@ -156,15 +196,15 @@ nav
 
   grid-area: daddy-text ;
 
-  color: white;
+  color: black;
 
-  height: 700px;
-  width: 60%;
+  height: auto;
+  width: 80%;
 
-  padding: 20px;
-  margin: 20px;
+  padding: 5%;
+  margin: 5%;
 
-  background-color: rgba(150, 150, 150, 0.0);
+  background-color: rgba(250, 250, 250, 1);
 
   font-size: 30px;
 
@@ -172,6 +212,7 @@ nav
   align-items: center;
   justify-content: center;
 
+  border-radius: 20px;
 
 }
 
@@ -219,6 +260,16 @@ nav
 
 }
 
+.big-muscles-right
+{
+  grid-area: left;
+}
+.big-muscles-left
+{
+  grid-area: right;
+}
+
+
 /* ----========---- */
 
 
@@ -236,13 +287,12 @@ Don't you dare say anything about left and right being on the wrong side. I can'
 
   grid-area: studio;
 
-  background-color: #627482;
   display: grid;
   text-align: center;
 
   grid-template-areas: 
   " right image s-text left ";
-  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-columns: 10% 20% 60% 10%;
   gap: 0rem;
 
 
@@ -254,10 +304,13 @@ Don't you dare say anything about left and right being on the wrong side. I can'
   width: 80%;
   height: 300px;
 
-  text-align: center;
   grid-area: image;
 
-  background-color: white;
+  background-color: var(--back-image) ;
+
+  display: flex; 
+  justify-content: center;
+  align-items: center;
 
   padding: 20px;
   margin: 20px;
@@ -268,15 +321,19 @@ Don't you dare say anything about left and right being on the wrong side. I can'
 {
 
   width: 80%;
-  height: 300px;
+  height: auto;
 
   text-align: center;
   grid-area: s-text;
 
-  background-color: white;
+  background-color: var(--back-text);
 
   padding: 20px;
   margin: 20px;
+
+  display: flex; 
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -303,13 +360,13 @@ Don't you dare say anything about left and right being on the wrong side. I can'
 .Service
 {
 
+  grid-area: service;
+
   display: grid;
   grid-template-areas: 
   " right s-text image left ";
-  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-columns: 10% 60% 20% 10%;
   gap: 0rem;
-
-  background-color: lightgrey;
 
 }
 
@@ -322,7 +379,11 @@ Don't you dare say anything about left and right being on the wrong side. I can'
   text-align: center;
   grid-area: image;
 
-  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--back-image) ;
 
   padding: 20px;
   margin: 20px;
@@ -338,10 +399,14 @@ Don't you dare say anything about left and right being on the wrong side. I can'
   text-align: center;
   grid-area: s-text;
 
-  background-color: white;
+  background-color: var(--back-text);
 
   padding: 20px;
   margin: 20px;
+
+  display: flex; 
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -355,7 +420,7 @@ Don't you dare say anything about left and right being on the wrong side. I can'
 .service-right
 {
 
-  grid-area: left;
+  grid-area: right;
 
 }
 
@@ -371,10 +436,9 @@ Don't you dare say anything about left and right being on the wrong side. I can'
   display: grid;
   grid-template-areas: 
   " right image s-text left ";
-  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-columns: 10% 30% 50% 10%;
   gap: 0rem;
 
-  background-color: lightpink;
 
 }
 
@@ -387,7 +451,11 @@ Don't you dare say anything about left and right being on the wrong side. I can'
   text-align: center;
   grid-area: image;
 
-  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--back-image) ;
 
   padding: 20px;
   margin: 20px;
@@ -403,10 +471,22 @@ Don't you dare say anything about left and right being on the wrong side. I can'
   text-align: center;
   grid-area: s-text;
 
-  background-color: white;
+  background-color: var(--back-text);
 
   padding: 20px;
   margin: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.pricing-text p
+{
+
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -420,7 +500,7 @@ Don't you dare say anything about left and right being on the wrong side. I can'
 .pricing-right
 {
 
-  grid-area: left;
+  grid-area: right;
 
 }
 
@@ -432,14 +512,14 @@ Don't you dare say anything about left and right being on the wrong side. I can'
 
 .Massages
 {
+  grid-area: massage;
 
   display: grid;
   grid-template-areas: 
   " right s-text image left ";
-  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-columns: 10% 65% 15% 10%;
   gap: 0rem;
 
-  background-color: lightgreen;
 
 }
 
@@ -452,10 +532,14 @@ Don't you dare say anything about left and right being on the wrong side. I can'
   text-align: center;
   grid-area: image;
 
-  background-color: white;
+  background-color: var(--back-image) ;
 
   padding: 20px;
   margin: 20px;
+
+  display: flex; 
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -468,10 +552,14 @@ Don't you dare say anything about left and right being on the wrong side. I can'
   text-align: center;
   grid-area: s-text;
 
-  background-color: white;
+  background-color: var(--back-text);
 
   padding: 20px;
   margin: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -485,7 +573,7 @@ Don't you dare say anything about left and right being on the wrong side. I can'
 .massages-right
 {
 
-  grid-area: left;
+  grid-area: right;
 
 }
 
@@ -498,13 +586,14 @@ Don't you dare say anything about left and right being on the wrong side. I can'
 .Q-A
 {
 
+  grid-area: qa;
+
   display: grid;
   grid-template-areas: 
   " right image s-text left ";
-  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-columns: 10% 20% 60% 10%;
   gap: 0rem;
 
-  background-color: lightgrey;
 
 }
 
@@ -517,10 +606,14 @@ Don't you dare say anything about left and right being on the wrong side. I can'
   text-align: center;
   grid-area: image;
 
-  background-color: white;
+  background-color: #b1bab6 ;
 
   padding: 20px;
   margin: 20px;
+
+  display: flex; 
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -533,10 +626,14 @@ Don't you dare say anything about left and right being on the wrong side. I can'
   text-align: center;
   grid-area: s-text;
 
-  background-color: white;
+  background-color: var(--back-text);
 
   padding: 20px;
   margin: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -550,13 +647,127 @@ Don't you dare say anything about left and right being on the wrong side. I can'
 .qa-right
 {
 
-  grid-area: left;
+  grid-area: right;
 
 }
 
 
 /* ----========---- */
 
+
+/* I am about to cry. This so boring.  */
+
+
+/* ----====Contact Info====---- */
+
+.Contacts
+{
+
+  display: grid;
+  grid-template-areas: 
+  " right image s-text left ";
+  grid-template-columns: 5% 35% 55% 5%;
+  gap: 0rem;
+
+}
+
+.contact-image
+{
+
+  background-image: url("assets/image/image5.JPEG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(249, 249, 250, 0);
+  grid-area: image;
+
+  width: 100%;
+
+}
+
+.contact-info
+{
+
+  width: 80%;
+  height: 300px;
+
+  grid-area: s-text;
+
+  background-color: var(--back-image);
+
+  padding: 20px;
+  margin: 20px;
+
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  " header c-to "
+  " opening opening "
+  ;
+
+}
+
+.contact-to
+{
+
+  grid-area: c-to;
+
+  display: flex;
+  align-items: right;
+  justify-content: right;
+
+}
+
+.opening
+{
+
+  grid-area: opening;
+
+}
+
+.contact-info p 
+{
+
+  text-align: left;
+  font-size: 20px;
+
+}
+
+.contact-info h2
+{
+
+  grid-area: header;
+
+}
+
+.contact-to a
+{
+
+  text-decoration: none;
+  color: black;
+  
+  font-size: 20px;
+
+  text-align: center;
+
+}
+
+
+.contact-left
+{
+
+  grid-area: left;
+
+}
+
+.contact-right
+{
+
+  grid-area: right;
+
+}
+
+/* ----========---- */
 
 
 /* ----====Footer====---- */
@@ -564,7 +775,7 @@ Don't you dare say anything about left and right being on the wrong side. I can'
 footer
 {
 
-  background-color: lightblue;
+  background-color: rgba(229, 229, 229, 0.4 );
   height: 100px;
 
 }
@@ -572,13 +783,88 @@ footer
 /* ----========---- */
 
 
+/* ----====Mobile View====---- */
+
+@media (max-width: 768px)
+{
+
+  .Studio, .Pricing, .Service, .Massages, .Q-A, .Contacts
+  {
+
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "image"
+    "s-text"
+    ;
+
+  }
+
+  .studio-image, .service-image, .pricing-image, .massages-image, .qa-image
+  {
+
+    height: 30%;
+
+  }
+
+  .studio-text, .service-text, .pricing-text, .massages-text, .qa-text, .contact-info
+  {
+
+    height: auto;
+
+  }
+
+  .da-big-daddy
+  {
+
+    grid-area: landing;
+    max-height: var(--maxH);
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto ;
+    grid-template-areas: 
+    " hello "
+    " book "
+    " daddy-text ";
+    gap: 0rem;
+    margin: 20px;
+    padding: 20px;
+
+  }
 
 
+  .meow-da-image
+  {
 
+    display: none;
 
+  }
 
+  .meow-da-landing 
+  {
 
+    color: black;
 
+  }
 
+  nav
+  {
+
+    grid-template-columns: 20% 80%;
+
+  }
+  
+  nav a
+  {
+
+    font-size: 20px;
+    padding: 0.5%;
+    margin: 0.5%;
+
+  }
+
+}
+
+/* ----========---- */
 
 
