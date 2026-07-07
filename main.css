@@ -20,6 +20,10 @@ I can assure you. This is so much dumber than write the number myself. But who c
   --default-margin: 0;
   --back-text: rgba(150, 150, 150, 0.4);
   --back-image: #b1bab6;
+  --royal-gold: #d29f22;
+  --crimson: #5d0018;
+  --dark-grey: #252628;
+  --black: #19171b;
 
 }
 
@@ -46,6 +50,7 @@ I can assure you. This is so much dumber than write the number myself. But who c
 
 body 
 {
+  background-image: linear-gradient(50deg, --crimson, --black);
 
   display: grid;
   grid-template-areas: 
@@ -70,10 +75,10 @@ nav
 {
 
   grid-area: nav;
-  height: 80px;
+  height: auto;
   width: 100%;
 
-  background-color: #B1BAB6;
+  background-color: var(--crimson);
 
   display: grid;
   grid-template-rows: auto;
@@ -152,7 +157,7 @@ nav
   max-height: var(--maxH);
 
   display: grid;
-  grid-template-columns: 5% 55% 35% 5%;
+  grid-template-columns: 5% 50% 40% 5%;
   grid-template-rows: auto ;
   grid-template-areas: 
   "right hello daddy-text left"
@@ -162,7 +167,7 @@ nav
   margin: 20px;
   padding: 20px;
 
-  background-image: url("assets/image/mali-massage1.jpg");
+  background-image: url("assets/image/IMG_7293.JPG");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover ;
@@ -329,6 +334,7 @@ Don't you dare say anything about left and right being on the wrong side. I can'
 
 }
 
+
 .studio-image
 {
 
@@ -337,7 +343,7 @@ Don't you dare say anything about left and right being on the wrong side. I can'
 
   grid-area: image;
 
-  background-color: var(--back-image) ;
+  background-color: var(--crimson) ;
 
   text-align: fill ;
 
@@ -347,6 +353,8 @@ Don't you dare say anything about left and right being on the wrong side. I can'
   display: flex; 
   justify-content: center;
   align-items: center;
+
+  color: var(--royal-gold);
 }
 
 .studio-text
@@ -419,11 +427,12 @@ Don't you dare say anything about left and right being on the wrong side. I can'
   justify-content: center;
   align-items: center;
 
-  background-color: var(--back-image) ;
+  background-color: var(--crimson) ;
 
   padding: 20px;
   margin: 20px;
 
+  color: var(--royal-gold);
 }
 .service-text
 {
@@ -503,11 +512,12 @@ Don't you dare say anything about left and right being on the wrong side. I can'
   justify-content: center;
   align-items: center;
 
-  background-color: var(--back-image) ;
+  background-color: var(--crimson) ;
 
   padding: 20px;
   margin: 20px;
 
+  color: var(--royal-gold);
 }
 
 .pricing-text
@@ -528,7 +538,8 @@ Don't you dare say anything about left and right being on the wrong side. I can'
 .pricing-title 
 {
   text-align: center;
-  background-color: var(--back-image) ;
+  background-color: var(--crimson) ;
+  color: var(--royal-gold);
 }
 .pricing-text table 
 {
@@ -591,7 +602,7 @@ Don't you dare say anything about left and right being on the wrong side. I can'
   text-align: center;
   grid-area: image;
 
-  background-color: var(--back-image) ;
+  background-color: var(--crimson) ;
 
   padding: 20px;
   margin: 20px;
@@ -600,6 +611,7 @@ Don't you dare say anything about left and right being on the wrong side. I can'
   justify-content: center;
   align-items: center;
 
+  color: var(--royal-gold);
 }
 
 .massages-text
@@ -674,6 +686,7 @@ Don't you dare say anything about left and right being on the wrong side. I can'
   justify-content: center;
   align-items: center;
 
+  color: var(--royal-gold);
 }
 
 .qa-text
@@ -753,7 +766,7 @@ Don't you dare say anything about left and right being on the wrong side. I can'
 
   grid-area: s-text;
 
-  background-color: var(--back-image);
+  background-color: var(--crimson);
 
   padding: 20px;
   margin: 20px;
@@ -811,6 +824,7 @@ Don't you dare say anything about left and right being on the wrong side. I can'
   margin: 0px ;
   padding: 0px ;
 
+  color: var(--royal-gold);
 }
 
 .opening table
